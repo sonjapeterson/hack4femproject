@@ -1,0 +1,10 @@
+<h1>New Post</h1>
+<%= semantic_form_for(@post) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :body %>
+  <%= f.input :should_tweet %>
+  <%= f.actions do %>
+    <%= f.action :submit, as: :button %>
+  <% end %>
+<% end %>
+
