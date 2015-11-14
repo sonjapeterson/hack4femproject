@@ -31,5 +31,9 @@ module WorkplaceSexism
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.twitter_consumer_key = ENV["CONSUMER_KEY"]
+    config.twitter_consumer_secret = ENV["CONSUMER_SECRET"]
+    config.twitter_access_token = ENV["ACCESS_TOKEN"]
+    config.twitter_access_token_secret = ENV["ACCESS_TOKEN_SECRET"]
   end
 end

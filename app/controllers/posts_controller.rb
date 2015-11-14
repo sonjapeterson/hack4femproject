@@ -18,6 +18,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :should_tweet)
+    params.require(:post).permit(:title, :body, :should_tweet, :tweet_body)
   end
 end
